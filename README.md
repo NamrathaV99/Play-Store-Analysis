@@ -4,7 +4,7 @@ In the Jupyter notebook , the Google Playstore data is analysed with various plo
 
 Data set : https://www.kaggle.com/lava18/google-play-store-apps
          
-The queires analysed are :
+The queires analysed are :  
 1.Which category has the maximum number of Apps?<br/>
 2.How are the ratings of the Apps?<br/>
 3.How many Apps have 5.0 rating ?<br/>
