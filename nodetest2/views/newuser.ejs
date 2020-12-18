@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <title>Add New Document</title>
+    <style>
+      body{
+        background-image: url('/images/Image1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/userlist/">Display</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/newuser">Insert</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/delete">Delete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/update">Update</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+    <h1>Add New Document</h1>
+
+    <form method="post" action="/adduser">
+      <div class="form-row">
+      <div class="form-group col-3">
+        <label for="sno">Sl No.</label>
+        <input type="number" name="sno" class="form-control" id="sno" placeholder="Enter Serial No." required>
+      </div>
+      <div class="form-group col-3">
+        <label for="app">App Name</label>
+        <input type="text" name="app" class="form-control" id="app" placeholder="Enter App Name" maxlength="100" required>
+      </div>
+      <div class="form-group col-3">
+        <label for="category">Category</label>
+        <input type="text" name="category" class="form-control" id="category" placeholder="Enter category type">
+      </div>
+      <div class="form-group col-3">
+        <label for="rating">Rating</label>
+        <input type="number" name="rating" class="form-control" id="rating" placeholder="Enter the rating" min="0" max="5" step=".1">
+      </div>
+      <div class="form-group col-3">
+        <label for="reviews">Reviews</label>
+        <input type="number" name="reviews" class="form-control" id="reviews" placeholder="Enter number of reviews">
+      </div>
+      <div class="form-group col-3">
+        <label for="size">Size</label>
+        <input type="text" name="size" class="form-control" id="size" placeholder="Enter memory size">
+      </div>
+      <div class="form-group col-3">
+        <label for="installs">Installs</label>
+        <input type="text" name="installs" class="form-control" id="installs" placeholder="Enter no. of installations">
+      </div>
+      <div class="form-group col-3">
+        <label for="type">Type</label>
+        <input type="text" name="type" class="form-control" id="type" placeholder="Enter Free/Paid" required>
+      </div>
+	  <div class="form-group col-3">
+        <label for="price">Price</label>
+        <input type="number" name="price" class="form-control" id="price" placeholder="Enter Price" min="0" step="any">
+      </div>
+	  <div class="form-group col-3">
+        <label for="content_rating">Content Rating</label>
+        <input type="text" name="content_rating" class="form-control" id="content_rating" placeholder="Enter Content Rating">
+      </div>
+	  <div class="form-group col-3">
+        <label for="genres">Genres</label>
+        <input type="text" name="genres" class="form-control" id="genres" placeholder="Enter Genre" required>
+      </div>
+	  <div class="form-group col-3">
+        <label for="last_updated">Last Updated</label>
+        <input type="date" name="last_updated" class="form-control" id="last_updated" placeholder="Enter the last date of updation">
+      </div>
+	  <div class="form-group col-3">
+        <label for="current_ver">Current Version</label>
+        <input type="text" name="current_ver" class="form-control" id="current_ver" placeholder="Enter Current Version">
+      </div>
+	  <div class="form-group col-3">
+        <label for="android_ver">Android Version</label>
+        <input type="text" name="android_ver" class="form-control" id="android_ver" placeholder="Enter Android Version">
+      </div>
+	  </div>
+	  <p align="center">
+      <button type="submit" class="btn btn-primary" >Submit</button>
+	  </p>
+      
+    </form>
+
+  </body>
+</html>
